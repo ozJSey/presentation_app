@@ -105,7 +105,7 @@ onUnmounted(() => {
         <h3>{{ title }}</h3>
       </header>
       <h2>{{ data.subject }}</h2>
-      <section class="content">
+      <section v-if="data.texts" class="content">
         <transition-group
           v-for="text in data.texts"
           :key="text.id"
@@ -114,12 +114,12 @@ onUnmounted(() => {
         >
           <figure v-show="text.visible" :key="text.id" :class="text.style">
             <img
-              v-if="text.image?.source"
-              :class="text.image.style"
-              :src="text.image.source"
-              :alt="text.message"
+              v-if="text?.image?.source"
+              :class="text?.image?.style"
+              :src="text?.image?.source"
+              :alt="text?.message"
             />
-            <p>{{ text.message }}</p>
+            <p>{{ text?.message }}</p>
           </figure>
         </transition-group>
       </section>
