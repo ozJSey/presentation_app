@@ -1,0 +1,28 @@
+{
+  "editor.tabSize": 2,
+  "diffEditor.renderSideBySide": true,
+  "window.zoomLevel": -1.5,
+  "prettier.printWidth": 80,
+  "editor.fontFamily": "'Monaco', 'Menlo', 'Consolas', 'Droid Sans Mono', 'Inconsolata', 'Courier New', 'monospace'",
+  "editor.fontSize": 14,
+  "diffEditor.ignoreTrimWhitespace": true,
+  "[json]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "workbench.editor.showTabs": true,
+  "html.format.wrapLineLength": 80,
+  "explorer.confirmDelete": false,
+  "editor.minimap.enabled": false,
+  "explorer.confirmDragAndDrop": false,
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true
+  },
+  "[vue]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "editor.formatOnSave": true,
+  "svg.preview.background": "transparent"
+}
