@@ -84,7 +84,6 @@ const presentationFunctionality = (e) => {
       document.exitFullscreen();
       break;
     default:
-      console.log(e);
       break;
   }
 };

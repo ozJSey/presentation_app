@@ -25,9 +25,6 @@ router.beforeEach(() => {
       </keep-alive>
     </transition>
   </router-view>
-  <router-link v-if="$route.fullPath === '/'" to="/welcome"
-    >Welcome, click here to start your presentation.</router-link
-  >
 </template>
 
 <style>

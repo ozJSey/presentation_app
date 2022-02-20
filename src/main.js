@@ -14,6 +14,10 @@ const router = createRouter({
   routes: [
     ...routes,
     {
+      path: "/",
+      component: () => import("./components/Home.vue"),
+    },
+    {
       path: "/endPage",
       component: () => import("./components/EndPage.vue"),
     },
