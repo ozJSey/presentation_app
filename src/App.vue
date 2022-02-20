@@ -28,7 +28,7 @@ router.beforeEach(() => {
 </template>
 
 <style>
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bellefair&family=Sedgwick+Ave+Display&display=swap");
 @import "vue-animate-transitions/dist/vue-animate-transitions.min.css";
 body {
   margin: 0;

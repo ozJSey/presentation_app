@@ -104,11 +104,12 @@ onUnmounted(() => {
         <h3>{{ title }}</h3>
       </header>
       <h2>{{ data.subject }}</h2>
-      <section v-if="data.texts" class="content">
+      <ul v-if="data.texts" class="content">
         <transition-group
           v-for="text in data.texts"
           :key="text.id"
           mode="in-out"
+          tag="li"
           :name="text?.animation"
         >
           <transition :key="text.id" :name="text?.image?.animation">
@@ -123,7 +124,7 @@ onUnmounted(() => {
           </transition>
           <p :key="text.id" v-show="text.visible">{{ text?.message }}</p>
         </transition-group>
-      </section>
+      </ul>
     </div>
   </section>
 </template>
@@ -131,8 +132,10 @@ onUnmounted(() => {
 <style lang="scss">
 %title {
   font-weight: bold;
-  font-family: "Poppins", sans-serif;
-  font-size: 20px;
+  font-family: "Sedgwick Ave Display", sans-serif;
+  color: #fcd186;
+  text-shadow: 2px 5px 5px rgba(0, 0, 0, 0.4);
+  font-size: 40px;
   margin: 10px 0;
 }
 .page {
@@ -150,8 +153,10 @@ onUnmounted(() => {
   h3 {
     text-align: center;
     margin: 0;
-    font-family: "Poppins", sans-serif;
-    font-size: 40px;
+    font-family: "Sedgwick Ave Display", sans-serif;
+    text-shadow: 2px 5px 5px rgba(0, 0, 0, 0.4);
+    color: #6667ab;
+    font-size: 80px;
   }
   .presentation {
     padding: 0 15px;
@@ -163,32 +168,41 @@ onUnmounted(() => {
       align-items: flex-start;
       flex-direction: column;
       max-height: calc(95vh - 90px);
-      figure {
-        flex: 1 1 32%;
-        max-width: 32%;
-        padding: 1%;
-        margin: 0;
-        display: inline-grid;
-        img {
-          max-width: 100%;
-          height: auto;
-        }
-        .make-bg {
-          position: relative;
-        }
-        .title-it {
-          margin-inline-start: 0;
-          margin-block-start: 0;
-
-          p {
-            @extend %title;
+      list-style: none;
+      li {
+        figure {
+          flex: 1 1 32%;
+          max-width: 32%;
+          padding: 1%;
+          margin: 0;
+          display: inline-grid;
+          img {
+            max-width: 100%;
+            height: auto;
+          }
+          .make-bg {
+            position: relative;
+          }
+          .title-it {
+            margin-inline-start: 0;
+            margin-block-start: 0;
           }
         }
-        .black-bg {
-          background: black;
-          color: white;
-          p {
-            color: yellowgreen;
+        p {
+          font-weight: normal;
+          position: relative;
+          font-family: "Bellefair", sans-serif;
+          font-size: 25px;
+          margin: 10px 0;
+          &::after {
+            content: "";
+            position: absolute;
+            top: 50%;
+            width: 20px;
+            height: 5px;
+            background: #fcd186;
+            left: -35px;
+            transform: translateY(-50%);
           }
         }
       }
