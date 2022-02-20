@@ -138,7 +138,7 @@ const subjects = [
           },
           {
             id: "asd16",
-            message: "DevOps Engineering | Tam Türkçesi yine yok 🙂",
+            message: "DevOps Engineering | Tam Türkçesi yine yok (:",
             visible: false,
             animation: "rollIn",
           },
@@ -335,7 +335,7 @@ const subjects = [
   {
     "/finding-jobs": {
       "İş imkanları": {
-        subject: "Daha iyisi yok!",
+        subject: "Sanırım, Daha iyisi yok!",
         transition: "fadeInDownBig",
         texts: [
           {
@@ -543,6 +543,7 @@ const subjects = [
   {
     "/questions": {
       Sorular: {
+        style: "center",
         subject: "Aklınıza hala takılan bir şey varsa!",
         transition: "zoomInUp",
       },

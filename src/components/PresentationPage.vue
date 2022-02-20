@@ -103,10 +103,10 @@ onUnmounted(() => {
       <header>
         <h3>{{ title }}</h3>
       </header>
-      <h2>{{ data.subject }}</h2>
+      <h2 :class="data.style">{{ data.subject }}</h2>
       <ul v-if="data.texts" class="content">
         <transition-group
-          v-for="text in data.texts"
+          v-for="(text, i) in data.texts"
           :key="text.id"
           mode="in-out"
           tag="li"
@@ -122,7 +122,16 @@ onUnmounted(() => {
               />
             </object>
           </transition>
-          <p :key="text.id" v-show="text.visible">{{ text?.message }}</p>
+          <p
+            :key="text.id"
+            v-if="text.visible"
+            :class="{
+              active:
+                i + 1 == data?.texts?.filter((text) => text.visible).length,
+            }"
+          >
+            {{ text?.message }}
+          </p>
         </transition-group>
       </ul>
     </div>
@@ -130,10 +139,12 @@ onUnmounted(() => {
 </template>
 
 <style lang="scss">
+$theme-main-color: #6667ab;
+$theme-sub-color: #f8c771;
 %title {
-  font-weight: bold;
+  font-weight: 700;
   font-family: "Sedgwick Ave Display", sans-serif;
-  color: #fcd186;
+  color: $theme-sub-color;
   text-shadow: 2px 5px 5px rgba(0, 0, 0, 0.4);
   font-size: 40px;
   margin: 10px 0;
@@ -149,13 +160,20 @@ onUnmounted(() => {
 
   h2 {
     @extend %title;
+    &.center {
+      height: 70vh;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
   }
   h3 {
     text-align: center;
     margin: 0;
     font-family: "Sedgwick Ave Display", sans-serif;
     text-shadow: 2px 5px 5px rgba(0, 0, 0, 0.4);
-    color: #6667ab;
+    color: $theme-main-color;
     font-size: 80px;
   }
   .presentation {
@@ -194,19 +212,46 @@ onUnmounted(() => {
           font-family: "Bellefair", sans-serif;
           font-size: 25px;
           margin: 10px 0;
+          transition: font-size 0.3s ease-in-out;
           &::after {
             content: "";
             position: absolute;
             top: 50%;
-            width: 20px;
+            width: 25px;
             height: 5px;
-            background: #fcd186;
-            left: -35px;
+            left: -38px;
             transform: translateY(-50%);
+            background: linear-gradient(
+              270deg,
+              $theme-main-color,
+              $theme-sub-color
+            );
+            background-size: 400% 400%;
+            animation: animate_gradient 10s ease infinite;
+          }
+          &.active {
+            background: darken($theme-main-color, 10%);
+            background-clip: text;
+            font-size: 35px;
+            -webkit-background-clip: text;
+            color: transparent;
+            border-bottom: 3px solid $theme-sub-color;
           }
         }
       }
     }
+  }
+}
+
+@keyframes animate_gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
   }
 }
 </style>
