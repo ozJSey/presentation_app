@@ -1,9 +1,0 @@
-.flip-enter-active {
-  transition: opacity 1s, transform 1s;
-}
-
-.flip-enter-from,
-.flip-leave-to {
-  transform: translateX(200px); /* Remove this if you don't want the 3D effect */
-  opacity: 0;
-}

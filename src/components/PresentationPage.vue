@@ -12,7 +12,7 @@ const presentationFunctionality = (e) => {
   switch (key) {
     case " ":
       Object.values(value.value).forEach((obj) =>
-        obj.texts.some((text) => !text.visible)
+        obj.texts?.some((text) => !text.visible)
           ? (obj.texts.find((text) => !text.visible).visible = true)
           : subjects.findIndex(
               (subject) => Object.keys(subject).toString() === route
@@ -110,17 +110,19 @@ onUnmounted(() => {
           v-for="text in data.texts"
           :key="text.id"
           mode="in-out"
-          :name="data.style"
+          :name="text?.animation"
         >
-          <figure v-show="text.visible" :key="text.id" :class="text.style">
-            <img
-              v-if="text?.image?.source"
-              :class="text?.image?.style"
-              :src="text?.image?.source"
-              :alt="text?.message"
-            />
-            <p>{{ text?.message }}</p>
-          </figure>
+          <transition :key="text.id" :name="text?.image?.animation">
+            <object v-show="text.visible" :class="text.style">
+              <img
+                v-if="text?.image && text?.image && text?.image?.source"
+                :class="text?.image?.style"
+                :src="text?.image?.source"
+                :alt="text?.message"
+              />
+            </object>
+          </transition>
+          <p :key="text.id" v-show="text.visible">{{ text?.message }}</p>
         </transition-group>
       </section>
     </div>
@@ -194,6 +196,4 @@ onUnmounted(() => {
     }
   }
 }
-
-@import "../assets/transitions.scss";
 </style>
