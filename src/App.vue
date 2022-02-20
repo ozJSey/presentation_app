@@ -10,6 +10,7 @@ const transition = ref("");
 const index = ref(-1);
 router.beforeEach(() => {
   index.value += 1;
+  if (!subjects[index.value]) index.value -= 1;
   transition.value = Object.values(
     Object.values(subjects[index.value])[0]
   )[0]?.transition;

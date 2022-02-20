@@ -32,7 +32,7 @@ const presentationFunctionality = (e) => {
       break;
     case "ArrowRight":
       Object.values(value.value).forEach((obj) =>
-        obj.texts.some((text) => !text.visible)
+        obj.texts?.some((text) => !text.visible)
           ? (obj.texts.find((text) => !text.visible).visible = true)
           : subjects.findIndex(
               (subject) => Object.keys(subject).toString() === route
@@ -53,7 +53,7 @@ const presentationFunctionality = (e) => {
       break;
     case "ArrowLeft":
       Object.values(value.value).forEach((obj) =>
-        obj.texts.some((text) => text.visible)
+        obj.texts?.some((text) => text.visible)
           ? ((obj.texts.reverse().find((text) => text.visible).visible = false),
             obj.texts.reverse())
           : subjects.findIndex(

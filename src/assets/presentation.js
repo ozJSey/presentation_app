@@ -3,7 +3,7 @@ const subjects = [
     "/welcome": {
       "Merhaba BAAL!": {
         subject: "Kim ki bu?",
-        transition: "zoomInDown",
+        transition: "slideInLeft",
         texts: [
           {
             id: "asd1",
@@ -38,7 +38,7 @@ const subjects = [
     "/software": {
       "Yazılım nedir tam olarak?": {
         subject: "Hardware/Software",
-        transition: "zoomInDown",
+        transition: "slideInRight",
         texts: [
           {
             id: "asd48",
@@ -72,7 +72,7 @@ const subjects = [
     "/software-engineering": {
       "Yazılım Mühendisliği": {
         subject: "Yazılım müdendisleri tam olarak ne yapıyor?",
-        transition: "zoomInDown",
+        transition: "slideInDown",
         texts: [
           {
             id: "asd5",
@@ -156,7 +156,7 @@ const subjects = [
     "/where-to-start": {
       "Nereden başlamalıyım": {
         subject: "Her hikayenin bir girişi var tabi!",
-        transition: "zoomInDown",
+        transition: "slideInUp",
         texts: [
           {
             id: "asd30",
@@ -224,7 +224,7 @@ const subjects = [
     "/education": {
       "/Eğitim kısmı": {
         subject: "Neyin ne olduğunu bilmelisiniz!",
-        transition: "zoomInDown",
+        transition: "fadeInRightBig",
         texts: [
           {
             id: "asd30",
@@ -252,7 +252,7 @@ const subjects = [
     "/companies": {
       Şirketler: {
         subject: "Şirketler ne yapıyor?",
-        transition: "zoomInDown",
+        transition: "fadeInLeftBig",
         texts: [
           {
             id: "as18",
@@ -336,7 +336,7 @@ const subjects = [
     "/finding-jobs": {
       "İş imkanları": {
         subject: "Daha iyisi yok!",
-        transition: "zoomInDown",
+        transition: "fadeInDownBig",
         texts: [
           {
             id: "asd33",
@@ -361,7 +361,7 @@ const subjects = [
     "/working-conditions-and-office-environment": {
       "Çalışma Sartları ve ofis ortamı": {
         subject: "Çoğu şirkette aynı şeyle karşılaşıcaksınız",
-        transition: "zoomInDown",
+        transition: "fadeInUpBig",
         texts: [
           {
             id: "asd33",
@@ -541,6 +541,7 @@ const subjects = [
     "/questions": {
       Sorular: {
         subject: "Aklınıza hala takılan bir şey varsa!",
+        transition: "zoomInUp",
       },
     },
   },
