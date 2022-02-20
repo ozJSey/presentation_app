@@ -36,7 +36,7 @@ const subjects = [
   },
   {
     "/software": {
-      "Yazılım nedir tam olarak?": {
+      "Yazılım nedİr tam olarak?": {
         subject: "Hardware/Software",
         transition: "slideInRight",
         texts: [
@@ -70,8 +70,8 @@ const subjects = [
   },
   {
     "/software-engineering": {
-      "Yazılım Mühendisliği": {
-        subject: "Yazılım müdendisleri tam olarak ne yapıyor?",
+      "Yazılım Mühendİslİğİ": {
+        subject: "Yazılım müdendisleri tam olarak ne yapabilir?",
         transition: "slideInDown",
         texts: [
           {
@@ -184,7 +184,8 @@ const subjects = [
           },
           {
             id: "asd32",
-            message: "Be water my friend. -Bruce Lee",
+            message:
+              "Empty your mind, be formless, shapeless – like water. \n-Bruce Lee",
             visible: false,
             animation: "rotateInDownLeft",
           },
@@ -222,7 +223,7 @@ const subjects = [
   },
   {
     "/education": {
-      "/Eğitim kısmı": {
+      "Eğİtİm kısmı": {
         subject: "Neyin ne olduğunu bilmelisiniz!",
         transition: "fadeInRightBig",
         texts: [
@@ -250,7 +251,7 @@ const subjects = [
   },
   {
     "/companies": {
-      Şirketler: {
+      Şİrketler: {
         subject: "Şirketler ne yapıyor?",
         transition: "fadeInLeftBig",
         texts: [
@@ -334,7 +335,7 @@ const subjects = [
   },
   {
     "/finding-jobs": {
-      "İş imkanları": {
+      "İş İmkanları": {
         subject: "Sanırım, Daha iyisi yok!",
         transition: "fadeInDownBig",
         texts: [
@@ -420,7 +421,7 @@ const subjects = [
   },
   {
     "/short-notes": {
-      "Bilale Anlatır Gibi": {
+      "Bİlale Anlatır Gİbİ": {
         subject: "Bazı genel geçer terimler",
         transition: "zoomInDown",
         texts: [
@@ -496,7 +497,7 @@ const subjects = [
   },
   {
     "/wish-i-knew": {
-      "Benim takıldığım yerler": {
+      "Benİm takıldığım yerler": {
         subject: "Tecrübelerimden bilginize arz.",
         transition: "zoomInDown",
         texts: [

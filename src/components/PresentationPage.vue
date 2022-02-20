@@ -226,8 +226,8 @@ $theme-sub-color: #f8c771;
               $theme-main-color,
               $theme-sub-color
             );
-            background-size: 400% 400%;
-            animation: animate_gradient 10s ease infinite;
+            background-size: 800% 800%;
+            animation: animate_gradient 5s ease infinite;
           }
           &.active {
             background: darken($theme-main-color, 10%);
