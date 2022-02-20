@@ -11,7 +11,7 @@ const presentationFunctionality = (e) => {
   const { key } = e;
   switch (key) {
     case " ":
-      Object.values(value.value).forEach((obj) =>
+      Object.values(value.value)?.forEach((obj) =>
         obj.texts?.some((text) => !text.visible)
           ? (obj.texts.find((text) => !text.visible).visible = true)
           : subjects.findIndex(
@@ -31,7 +31,7 @@ const presentationFunctionality = (e) => {
       );
       break;
     case "ArrowRight":
-      Object.values(value.value).forEach((obj) =>
+      Object.values(value.value)?.forEach((obj) =>
         obj.texts?.some((text) => !text.visible)
           ? (obj.texts.find((text) => !text.visible).visible = true)
           : subjects.findIndex(
@@ -52,15 +52,15 @@ const presentationFunctionality = (e) => {
       );
       break;
     case "ArrowLeft":
-      Object.values(value.value).forEach((obj) =>
+      Object.values(value.value)?.forEach((obj) =>
         obj.texts?.some((text) => text.visible)
           ? ((obj.texts.reverse().find((text) => text.visible).visible = false),
             obj.texts.reverse())
           : subjects.findIndex(
               (subject) => Object.keys(subject).toString() === route
             )
-          ? Object.values(value.value).forEach((obj) =>
-              obj.texts.forEach((text) => {
+          ? Object.values(value.value)?.forEach((obj) =>
+              obj.texts?.forEach((text) => {
                 text.visible = false;
               })
             ) ||
