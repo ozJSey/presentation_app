@@ -112,16 +112,6 @@ onUnmounted(() => {
           tag="li"
           :name="text?.animation"
         >
-          <transition :key="text.id" :name="text?.image?.animation">
-            <object v-show="text.visible" :class="text.style">
-              <img
-                v-if="text?.image && text?.image && text?.image?.source"
-                :class="text?.image?.style"
-                :src="text?.image?.source"
-                :alt="text?.message"
-              />
-            </object>
-          </transition>
           <p
             :key="text.id"
             v-if="text.visible"
@@ -132,6 +122,16 @@ onUnmounted(() => {
           >
             {{ text?.message }}
           </p>
+          <transition :key="text.id" :name="text?.image?.animation">
+            <object v-show="text.visible" :class="text.style">
+              <img
+                v-if="text?.image && text?.image && text?.image?.source"
+                :class="text?.image?.style"
+                :src="text?.image?.source"
+                :alt="text?.message"
+              />
+            </object>
+          </transition>
         </transition-group>
       </ul>
     </div>
@@ -181,18 +181,25 @@ $theme-sub-color: #f8c771;
     max-height: 95vh;
     max-width: 95vw;
     .content {
-      display: flex;
-      flex-wrap: wrap;
-      align-items: flex-start;
-      flex-direction: column;
-      max-height: calc(95vh - 90px);
+      max-height: calc(95vh - 190px);
+      max-width: 100%;
       list-style: none;
+      overflow: hidden;
+      margin-block-start: 0;
+      margin-block-end: 0;
+      padding-inline-start: 0;
+      display: flex;
+      flex-flow: column;
+      flex-wrap: wrap;
       li {
-        figure {
-          flex: 1 1 32%;
-          max-width: 32%;
+        max-width: 33%;
+        flex: 0 0 33%;
+        min-height: 1px;
+        object {
           padding: 1%;
           margin: 0;
+          padding: 0;
+          box-sizing: border-box;
           display: inline-grid;
           img {
             max-width: 100%;
@@ -212,6 +219,7 @@ $theme-sub-color: #f8c771;
           font-family: "Bellefair", sans-serif;
           font-size: 25px;
           margin: 10px 0;
+          margin-left: 40px;
           transition: font-size 0.3s ease-in-out;
           &::after {
             content: "";

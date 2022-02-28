@@ -10,12 +10,18 @@ const subjects = [
             message: "Özgür Seyidoğlu",
             visible: false,
             animation: "bounceInUp",
+            image: {
+              source: "/src/assets/whoami.png",
+            },
           },
           {
             id: "asd2",
             message: "Yazılım Müdendisi, ama dahası var tabi...",
             visible: false,
             animation: "bounceInUp",
+            image: {
+              source: "/src/assets/lib.png",
+            },
           },
           {
             id: "asd3",
@@ -45,12 +51,18 @@ const subjects = [
             message: "Yazılım nedir?",
             visible: false,
             animation: "fadeInUp",
+            image: {
+              source: "/src/assets/analyticalengine.jpeg",
+            },
           },
           {
             id: "asd48",
             message: "Yazılım dilleri ve kullanım alanları",
             visible: false,
             animation: "fadeInUp",
+            image: {
+              source: "/src/assets/softwarelanguages.jpeg",
+            },
           },
           {
             id: "asd50",
@@ -204,12 +216,18 @@ const subjects = [
             message: "Software Memes",
             visible: false,
             animation: "rotateIn",
+            image: {
+              source: "/src/assets/meme.jpeg",
+            },
           },
           {
             id: "asd31",
             message: "Parası?",
             visible: false,
             animation: "rotateIn",
+            image: {
+              source: "/src/assets/money.png",
+            },
           },
           {
             id: "asd32",
@@ -256,12 +274,6 @@ const subjects = [
         transition: "fadeInLeftBig",
         texts: [
           {
-            id: "as18",
-            message: "Yazılımcası: IaaS vs PaaS vs SaaS",
-            visible: false,
-            animation: "flipInY",
-          },
-          {
             id: "asd19",
             message: "Software company | Yazılım Şirketi",
             visible: false,
@@ -269,7 +281,7 @@ const subjects = [
           },
           {
             id: "asd20",
-            message: "Product company | Ürün Odaklı Şirketleri",
+            message: "Product company | Ürün Odaklı Şirketler",
             visible: false,
             animation: "flipInY",
           },
@@ -326,6 +338,12 @@ const subjects = [
           {
             id: "asd29",
             message: "Diğerleri",
+            visible: false,
+            animation: "flipInY",
+          },
+          {
+            id: "as18",
+            message: "Yazılımcası: IaaS vs PaaS vs SaaS",
             visible: false,
             animation: "flipInY",
           },
@@ -440,6 +458,12 @@ const subjects = [
           {
             id: "asd34",
             message: "Web1/Web2/Web3",
+            visible: false,
+            animation: "fadeInLeft",
+          },
+          {
+            id: "asd59",
+            message: "Blockchain",
             visible: false,
             animation: "fadeInLeft",
           },

@@ -1,7 +1,7 @@
 {
   "editor.tabSize": 2,
   "diffEditor.renderSideBySide": true,
-  "window.zoomLevel": -1.5,
+  "window.zoomLevel": 0,
   "prettier.printWidth": 80,
   "editor.fontFamily": "'Monaco', 'Menlo', 'Consolas', 'Droid Sans Mono', 'Inconsolata', 'Courier New', 'monospace'",
   "editor.fontSize": 14,
