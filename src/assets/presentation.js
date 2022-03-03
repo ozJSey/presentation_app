@@ -224,7 +224,13 @@ const subjects = [
           },
           {
             id: "asd32",
-            message: "Tercih",
+            message: "Tercih (Uni/Tech-stack)",
+            visible: false,
+            animation: "rotateInDownLeft",
+          },
+          {
+            id: "asd92",
+            message: "Live eat breathe code: it matters.",
             visible: false,
             animation: "rotateInDownLeft",
           },
@@ -235,22 +241,22 @@ const subjects = [
             animation: "rotateInDownLeft",
           },
           {
-            id: "asd32",
-            message: "Hardware muhtaçlığı bizi havalı gösteriyor.",
-            visible: false,
-            animation: "rotateInDownLeft",
-            image: {
-              style: "blur",
-              source: "/src/assets/parasi.jpeg",
-            },
-          },
-          {
-            id: "asd32",
+            id: "asd92",
             message: "Limitlere!",
             visible: false,
             animation: "rotateInDownLeft",
             image: {
               source: "/src/assets/bcsno.jpeg",
+            },
+          },
+          {
+            id: "asd93",
+            message: "Hardware muhtaçlığı, olur yeriz.",
+            visible: false,
+            animation: "rotateInDownLeft",
+            image: {
+              style: "blur",
+              source: "/src/assets/parasi.jpeg",
             },
           },
         ],
@@ -283,7 +289,7 @@ const subjects = [
           },
           {
             id: "asd32",
-            message: "Esas Nedenler",
+            message: "Esas Nedenler, ne olmalı",
             visible: false,
             animation: "rotateIn",
           },
@@ -682,6 +688,18 @@ const subjects = [
           {
             id: "asd46",
             message: "Çekişmeler",
+            visible: false,
+            animation: "bounceIn",
+          },
+          {
+            id: "asd46",
+            message: "Dayanışmalar",
+            visible: false,
+            animation: "bounceIn",
+          },
+          {
+            id: "asd46",
+            message: "Sağlık/Yaşam stili/Finansal yönetim ve harcamalar.",
             visible: false,
             animation: "bounceIn",
           },
