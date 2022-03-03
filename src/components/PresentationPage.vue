@@ -146,7 +146,7 @@ $theme-sub-color: #f8c771;
   font-family: "Sedgwick Ave Display", sans-serif;
   color: $theme-sub-color;
   text-shadow: 2px 5px 5px rgba(0, 0, 0, 0.4);
-  font-size: 40px;
+  font-size: 36px;
   margin: 10px 0;
 }
 .page {
@@ -174,14 +174,14 @@ $theme-sub-color: #f8c771;
     font-family: "Sedgwick Ave Display", sans-serif;
     text-shadow: 2px 5px 5px rgba(0, 0, 0, 0.4);
     color: $theme-main-color;
-    font-size: 80px;
+    font-size: 70px;
   }
   .presentation {
     padding: 0 15px;
     max-height: 96vh;
     max-width: 95vw;
     .content {
-      max-height: calc(96vh - 190px);
+      max-height: calc(90vh - 190px);
       max-width: 100%;
       list-style: none;
       overflow: hidden;
@@ -193,9 +193,8 @@ $theme-sub-color: #f8c771;
       flex-wrap: wrap;
       li {
         max-width: 33%;
-        flex: 0 0 33%;
+        flex: 1 1 33%;
         min-height: 1px;
-        max-height: 66vh;
         object {
           padding: 1%;
           margin: 0;
@@ -204,6 +203,7 @@ $theme-sub-color: #f8c771;
           display: inline-block;
           img {
             max-width: 100%;
+            max-height: 50vh;
             height: auto;
             &.blur {
               filter: blur(4px);

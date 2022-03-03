@@ -88,19 +88,13 @@ const subjects = [
           },
           {
             id: "asd79",
-            message: "Nefret de eder.",
+            message: "Bazı şeyleri sever.",
             visible: false,
             animation: "fadeInUp",
           },
           {
             id: "asd80",
-            message: "Nefret de eder.",
-            visible: false,
-            animation: "fadeInUp",
-          },
-          {
-            id: "asd81",
-            message: "Nefret de eder.",
+            message: "Dolayısıyla nefret de eder.",
             visible: false,
             animation: "fadeInUp",
           },
@@ -323,7 +317,7 @@ const subjects = [
           },
           {
             id: "asd48",
-            message: "İyi yazılımcıları taklit edin.",
+            message: "İyi yazılımcıları taklit/takip edin.",
             visible: false,
             animation: "zoomInLeft",
           },
@@ -504,23 +498,14 @@ const subjects = [
             animation: "bounceInDown",
           },
           {
-            id: "asd32",
-            message: "Beklentiler",
-            visible: false,
-            animation: "bounceInDown",
-            image: {
-              source: "/src/assets/zaman.jpeg",
-            },
-          },
-          {
-            id: "asd32",
-            message: "Sunulanlar",
-            visible: false,
-            animation: "bounceInDown",
-          },
-          {
-            id: "asd32",
+            id: "asd133",
             message: "Remote Hybrid On-site",
+            visible: false,
+            animation: "bounceInDown",
+          },
+          {
+            id: "asd134",
+            message: "Odak sorunları",
             visible: false,
             animation: "bounceInDown",
           },
@@ -537,9 +522,36 @@ const subjects = [
             animation: "bounceInDown",
           },
           {
+            id: "asd32",
+            message: "Beklentiler",
+            visible: false,
+            animation: "bounceInDown",
+            image: {
+              source: "/src/assets/zaman.jpeg",
+            },
+          },
+          {
+            id: "asd32",
+            message: "Sunulanlar",
+            visible: false,
+            animation: "bounceInDown",
+          },
+          {
+            id: "asd132",
+            message: "Herkes mesaisini mi çalışıyor?",
+            visible: false,
+            animation: "bounceInDown",
+          },
+          {
             id: "asd33",
             message:
-              "Önerilerim: yıllar ve emek, boşver gitsin, knowledge-bias, kullanıcı aptaldır...",
+              "Önerilerim: yıllar ve emek, boşver gitsin, knowledge-bias ve kullanıcı aptaldır...",
+            visible: false,
+            animation: "bounceInDown",
+          },
+          {
+            id: "asd32",
+            message: "Test et ve emin ol.",
             visible: false,
             animation: "bounceInDown",
           },
@@ -670,22 +682,6 @@ const subjects = [
             animation: "bounceIn",
           },
           {
-            id: "asd75",
-            message: "Influencerlara inanmayın!",
-            visible: false,
-            animation: "bounceIn",
-            image: {
-              source: "/src/assets/googleap.jpeg",
-            },
-          },
-          {
-            id: "asd46",
-            message:
-              "Daha iyisi var tabi: dengesini kurmak ve belli bir yere odaklanmak",
-            visible: false,
-            animation: "bounceIn",
-          },
-          {
             id: "asd46",
             message: "Çekişmeler",
             visible: false,
@@ -694,6 +690,28 @@ const subjects = [
           {
             id: "asd46",
             message: "Dayanışmalar",
+            visible: false,
+            animation: "bounceIn",
+          },
+          {
+            id: "asd75",
+            message: "Influencer/Sosyal-medya'ya inanmayın!",
+            visible: false,
+            animation: "bounceIn",
+            image: {
+              source: "/src/assets/googleap.jpeg",
+            },
+          },
+          {
+            id: "asd46",
+            message: "Usta çırak ilişkisi, öğretmen seçimi.",
+            visible: false,
+            animation: "bounceIn",
+          },
+          {
+            id: "asd46",
+            message:
+              "Daha iyisi var tabi: dengesini kurmak ve belli bir yere odaklanmak",
             visible: false,
             animation: "bounceIn",
           },
