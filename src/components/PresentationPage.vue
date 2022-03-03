@@ -151,7 +151,7 @@ $theme-sub-color: #f8c771;
 }
 .page {
   width: 96vw;
-  height: 95vh;
+  height: 96vh;
   margin: 2.5vh 2vw;
   box-shadow: 24px 24px 16px 0 rgba(0, 0, 0, 0.25),
     -8px -8px 24px 0 rgba(255, 255, 255, 0.3);
@@ -178,10 +178,10 @@ $theme-sub-color: #f8c771;
   }
   .presentation {
     padding: 0 15px;
-    max-height: 95vh;
+    max-height: 96vh;
     max-width: 95vw;
     .content {
-      max-height: calc(95vh - 190px);
+      max-height: calc(96vh - 190px);
       max-width: 100%;
       list-style: none;
       overflow: hidden;
@@ -195,15 +195,19 @@ $theme-sub-color: #f8c771;
         max-width: 33%;
         flex: 0 0 33%;
         min-height: 1px;
+        max-height: 66vh;
         object {
           padding: 1%;
           margin: 0;
           padding: 0;
           box-sizing: border-box;
-          display: inline-grid;
+          display: inline-block;
           img {
             max-width: 100%;
             height: auto;
+            &.blur {
+              filter: blur(4px);
+            }
           }
           .make-bg {
             position: relative;

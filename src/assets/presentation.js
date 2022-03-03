@@ -92,6 +92,24 @@ const subjects = [
             visible: false,
             animation: "fadeInUp",
           },
+          {
+            id: "asd80",
+            message: "Nefret de eder.",
+            visible: false,
+            animation: "fadeInUp",
+          },
+          {
+            id: "asd81",
+            message: "Nefret de eder.",
+            visible: false,
+            animation: "fadeInUp",
+          },
+          {
+            id: "asd81",
+            message: "Nefret de eder.",
+            visible: false,
+            animation: "fadeInUp",
+          },
         ],
       },
     },
@@ -216,6 +234,25 @@ const subjects = [
             visible: false,
             animation: "rotateInDownLeft",
           },
+          {
+            id: "asd32",
+            message: "Hardware muhtaçlığı bizi havalı gösteriyor.",
+            visible: false,
+            animation: "rotateInDownLeft",
+            image: {
+              style: "blur",
+              source: "/src/assets/parasi.jpeg",
+            },
+          },
+          {
+            id: "asd32",
+            message: "Limitlere!",
+            visible: false,
+            animation: "rotateInDownLeft",
+            image: {
+              source: "/src/assets/bcsno.jpeg",
+            },
+          },
         ],
       },
     },
@@ -267,6 +304,12 @@ const subjects = [
             animation: "zoomInLeft",
           },
           {
+            id: "asd49",
+            message: "Mühendislik hakları belli başlı avantajları",
+            visible: false,
+            animation: "fadeInUp",
+          },
+          {
             id: "asd31",
             message: "Kendi kendine",
             visible: false,
@@ -283,6 +326,9 @@ const subjects = [
             message: "Bitmiyor...",
             visible: false,
             animation: "zoomInLeft",
+            image: {
+              source: "/src/assets/coffee.jpeg",
+            },
           },
         ],
       },
@@ -392,10 +438,28 @@ const subjects = [
             message: "Maaş durumu",
             visible: false,
             animation: "zoomInRight",
+            image: {
+              source: "/src/assets/rich.jpeg",
+            },
+          },
+          {
+            id: "asd71",
+            message: "Haketmeyen olduğunda seçenekleriniz var! Anti-hero ol!",
+            visible: false,
+            animation: "zoomInRight",
+            image: {
+              source: "/src/assets/diggin.jpeg",
+            },
           },
           {
             id: "asd32",
-            message: "Fake it till you make it",
+            message: "Fake it till you make it, especially to HR's",
+            visible: false,
+            animation: "zoomInRight",
+          },
+          {
+            id: "asd62",
+            message: "Yurtdışı",
             visible: false,
             animation: "zoomInRight",
           },
@@ -428,10 +492,19 @@ const subjects = [
             animation: "bounceInDown",
           },
           {
+            id: "asd62",
+            message: "Tech-stack, tooling, JR-Mid-SR",
+            visible: false,
+            animation: "bounceInDown",
+          },
+          {
             id: "asd32",
             message: "Beklentiler",
             visible: false,
             animation: "bounceInDown",
+            image: {
+              source: "/src/assets/zaman.jpeg",
+            },
           },
           {
             id: "asd32",
@@ -459,7 +532,8 @@ const subjects = [
           },
           {
             id: "asd33",
-            message: "Önerilerim",
+            message:
+              "Önerilerim: yıllar ve emek, boşver gitsin, knowledge-bias, kullanıcı aptaldır...",
             visible: false,
             animation: "bounceInDown",
           },
@@ -478,6 +552,9 @@ const subjects = [
             message: "Algoritma",
             visible: false,
             animation: "fadeInLeft",
+            image: {
+              source: "/src/assets/algoritma.jpeg",
+            },
           },
           {
             id: "asd33",
@@ -505,7 +582,7 @@ const subjects = [
           },
           {
             id: "asd36",
-            message: "Cryptocurrency/BITCOIN",
+            message: "Cryptocurrency",
             visible: false,
             animation: "fadeInLeft",
           },
@@ -564,7 +641,7 @@ const subjects = [
   },
   {
     "/wish-i-knew": {
-      "Benİm takıldığım yerler": {
+      "Benİm takıldığım yerler ve paylaşmak İstedİğİm bİr kaç bİr şey": {
         subject: "Tecrübelerimden bilginize arz.",
         transition: "zoomInDown",
         texts: [
@@ -597,7 +674,8 @@ const subjects = [
           },
           {
             id: "asd46",
-            message: "Daha iyisi var dengesini kurmak",
+            message:
+              "Daha iyisi var tabi: dengesini kurmak ve belli bir yere odaklanmak",
             visible: false,
             animation: "bounceIn",
           },
@@ -610,6 +688,12 @@ const subjects = [
           {
             id: "asd47",
             message: "Yazılımla ilgili diğer herşeyin önemi",
+            visible: false,
+            animation: "bounceIn",
+          },
+          {
+            id: "asd55",
+            message: "Bilmediğiniz toollar ve bilgisayarların aptallığı",
             visible: false,
             animation: "bounceIn",
           },
