@@ -551,6 +551,13 @@ const subjects = [
             visible: false,
             animation: "fadeInLeft",
           },
+          {
+            id: "asd72",
+            message:
+              "Biraz da güvenlik, crypting, encryption, decrpytion, public/private key, social engineering",
+            visible: false,
+            animation: "fadeInLeft",
+          },
         ],
       },
     },
@@ -578,6 +585,15 @@ const subjects = [
             message: "Kendinizden harcamayın",
             visible: false,
             animation: "bounceIn",
+          },
+          {
+            id: "asd75",
+            message: "Influencerlara inanmayın!",
+            visible: false,
+            animation: "bounceIn",
+            image: {
+              source: "/src/assets/googleap.jpeg",
+            },
           },
           {
             id: "asd46",
