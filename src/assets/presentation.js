@@ -30,12 +30,6 @@ const subjects = [
             visible: false,
             animation: "bounceInUp",
           },
-          {
-            id: "asd4",
-            message: "Bu ne demek?",
-            visible: false,
-            animation: "bounceInUp",
-          },
         ],
       },
     },
@@ -47,13 +41,28 @@ const subjects = [
         transition: "slideInRight",
         texts: [
           {
-            id: "asd48",
-            message: "Yazılım nedir?",
+            id: "asd99",
+            message: "Bilgisayar nedir?",
             visible: false,
             animation: "fadeInUp",
             image: {
               source: "/src/assets/analyticalengine.jpeg",
             },
+          },
+          {
+            id: "asd4",
+            message: "Kime borcluyuz - Alan Turing",
+            visible: false,
+            animation: "fadeInUp",
+            image: {
+              source: "/src/assets/turing_machine.jpeg",
+            },
+          },
+          {
+            id: "asd48",
+            message: "Yazılım nedir?",
+            visible: false,
+            animation: "fadeInUp",
           },
           {
             id: "asd48",
@@ -66,13 +75,20 @@ const subjects = [
           },
           {
             id: "asd50",
-            message: "Compiler nedir, intrepeter nedir?",
+            message: "Compiler, intrepeter, assembler nedir?",
             visible: false,
             animation: "fadeInUp",
           },
           {
             id: "asd49",
-            message: "Mühendis ne iş yapar, geliştirici ne iş yapar?",
+            message:
+              "Mühendis ne iş yapar, geliştirici ne iş yapar? Bi de Hippi'ler var",
+            visible: false,
+            animation: "fadeInUp",
+          },
+          {
+            id: "asd79",
+            message: "Nefret de eder.",
             visible: false,
             animation: "fadeInUp",
           },
@@ -196,8 +212,7 @@ const subjects = [
           },
           {
             id: "asd32",
-            message:
-              "Empty your mind, be formless, shapeless – like water. \n-Bruce Lee",
+            message: "Gerisi gelir ama akmasını bilicen.",
             visible: false,
             animation: "rotateInDownLeft",
           },
@@ -254,6 +269,12 @@ const subjects = [
           {
             id: "asd31",
             message: "Kendi kendine",
+            visible: false,
+            animation: "zoomInLeft",
+          },
+          {
+            id: "asd48",
+            message: "İyi yazılımcıları taklit edin.",
             visible: false,
             animation: "zoomInLeft",
           },
@@ -346,6 +367,9 @@ const subjects = [
             message: "Yazılımcası: IaaS vs PaaS vs SaaS",
             visible: false,
             animation: "flipInY",
+            image: {
+              source: "/src/assets/iaaspaassaas.jpeg",
+            },
           },
         ],
       },
@@ -371,6 +395,12 @@ const subjects = [
           },
           {
             id: "asd32",
+            message: "Fake it till you make it",
+            visible: false,
+            animation: "zoomInRight",
+          },
+          {
+            id: "asd32",
             message: "Oldum dedikten sonra...",
             visible: false,
             animation: "zoomInRight",
@@ -385,12 +415,6 @@ const subjects = [
         subject: "Çoğu şirkette aynı şeyle karşılaşıcaksınız",
         transition: "fadeInUpBig",
         texts: [
-          {
-            id: "asd33",
-            message: "Önerilerim",
-            visible: false,
-            animation: "bounceInDown",
-          },
           {
             id: "asd31",
             message: "Hiyerarşi",
@@ -433,25 +457,37 @@ const subjects = [
             visible: false,
             animation: "bounceInDown",
           },
+          {
+            id: "asd33",
+            message: "Önerilerim",
+            visible: false,
+            animation: "bounceInDown",
+          },
         ],
       },
     },
   },
   {
     "/short-notes": {
-      "Bİlale Anlatır Gİbİ": {
+      "Bİlale Anlatır Gİbİ, umarım ": {
         subject: "Bazı genel geçer terimler",
         transition: "zoomInDown",
         texts: [
           {
+            id: "asd60",
+            message: "Algoritma",
+            visible: false,
+            animation: "fadeInLeft",
+          },
+          {
             id: "asd33",
-            message: "Big Data",
+            message: "Big Data/Cloud",
             visible: false,
             animation: "fadeInLeft",
           },
           {
             id: "asd34",
-            message: "Internet",
+            message: "Intranet/Internet, Browser",
             visible: false,
             animation: "fadeInLeft",
           },

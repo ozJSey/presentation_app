@@ -28,7 +28,6 @@ router.beforeEach(() => {
 </template>
 
 <style>
-@import url("https://fonts.googleapis.com/css2?family=Bellefair&family=Sedgwick+Ave+Display&display=swap");
 @import "vue-animate-transitions/dist/vue-animate-transitions.min.css";
 body {
   margin: 0;
@@ -38,6 +37,17 @@ body {
 :not(:root):fullscreen::backdrop {
   background: #6667ab;
   backdrop-filter: blur(5px) drop-shadow(4px 4px 10px blue);
+}
+
+@font-face {
+  font-family: Bellefair;
+  src: local("Bellefair"), url(./assets/fonts/Bellefair/Bellefair-Regular.ttf);
+}
+
+@font-face {
+  font-family: Sedgwick Ave Display;
+  src: local("Sedgwick Ave Display"),
+    url(./assets/fonts/Sedgwick_Ave_Display/SedgwickAveDisplay-Regular.ttf);
 }
 
 /*options of transition library */
